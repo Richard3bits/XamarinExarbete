@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinExarbete.ColorTemplateView">
+    
+  <ContentView.Content>
+        <StackLayout Orientation="Vertical"
+                 VerticalOptions="Center">
+
+            <Label
+                x:Name="colorLabel"
+                Text="Välj färgtema"
+                Margin="20, 0, 0, 0"
+                TextColor="Black" />
+
+            <!--<BoxView
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="100"
+                BackgroundColor="Black"
+                x:Name="box" />-->
+
+            <StackLayout Orientation="Horizontal">
+                <Label
+                x:Name="redLabel"
+                Margin="20, 20, 20, 0"
+                TextColor="Red"
+                Text="Röd" />
+                <Slider
+                HorizontalOptions="FillAndExpand"
+                ValueChanged="OnRedSliderChanged"
+                Margin="20, 20, 20, 0"
+                Minimum="0"
+                Maximum="1"
+                x:Name="redSlider" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label
+                x:Name="greenLabel"
+                Margin="20, 20, 20, 0"
+                TextColor="Green"
+                Text="Grön" />
+                <Slider
+                HorizontalOptions="FillAndExpand"
+                ValueChanged="OnRedSliderChanged"
+                Margin="20, 20, 20, 0"
+                Minimum="0"
+                Maximum="1"
+                x:Name="greenSlider" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label
+                x:Name="blueLabel"
+                Margin="20, 20, 20, 0"
+                TextColor="Blue"
+                Text="Blå" />
+                <Slider
+                HorizontalOptions="FillAndExpand"
+                ValueChanged="OnRedSliderChanged"
+                Minimum="0"
+                Maximum="1"
+                Margin="20, 20, 20, 0"
+                x:Name="blueSlider" />
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:XamarinExarbete"
+             x:Class="XamarinExarbete.RegisterForm">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="resourceBackgroundColor">#FF00FF</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Orientation="Vertical">
+
+        <StackLayout Orientation="Horizontal">
+            <Entry
+                x:Name="firstNameField"
+                Placeholder="Förnamn" />
+            <Entry
+                x:Name="LastNameField"
+                Placeholder="Efternamn" />
+        </StackLayout>
+
+        <Entry
+            x:Name="emailField"
+            Placeholder="Email" />
+        
+        <Entry
+            IsPassword="True"
+            x:Name="passwordField"
+            Placeholder="Lösenord" />
+
+        <Entry
+            IsPassword="True"
+            x:Name="repeatPasswordField"
+            Placeholder="Repetera lösenord" />
+
+        <StackLayout Orientation="Horizontal"
+                     x:Name="colorStack">
+            <custom:ColorTemplateView
+                slideEvent="OnSliderPageChanged"
+                x:Name="ColorView"
+                HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+    </StackLayout>
+    
+</ContentPage>

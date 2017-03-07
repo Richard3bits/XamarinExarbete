@@ -14,5 +14,14 @@ C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\Xa
 C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\obj\Debug\XamarinExarbete.WelcomePage.xaml.g.cs
 C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\obj\Debug\XamarinExarbete.dll
 C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\obj\Debug\XamarinExarbete.pdb
+C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\bin\Debug\Xamarin.iOS.dll
+C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\bin\Debug\System.dll
+C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\bin\Debug\System.Core.dll
+C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\bin\Debug\System.Xml.dll
+C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\bin\Debug\Mono.Dynamic.Interpreter.dll
+C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\bin\Debug\Xamarin.iOS.xml
+C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\obj\Debug\XamarinExarbete.RegisterForm.xaml.g.cs
+C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\obj\Debug\XamarinExarbete.ColorTemplateView.xaml.g.cs
+C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\obj\Debug\XamarinExarbete.PreviewView.xaml.g.cs
 C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\obj\Debug\XamarinExarbete.dll.mdb
 C:\Users\Richard.Jern\Desktop\XamarinExarbete\XamarinExarbete\XamarinExarbete\XamarinExarbete\bin\Debug\XamarinExarbete.dll.mdb

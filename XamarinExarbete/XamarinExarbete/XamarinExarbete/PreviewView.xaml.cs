@@ -10,16 +10,29 @@ namespace XamarinExarbete
 {
     public partial class PreviewView : ContentView
     {
-        public PreviewView(Color backgroundColor, Color backgroundButtonColor)
+        public PreviewView()
         {
             InitializeComponent();
-            updateColors(backgroundColor, backgroundButtonColor);
         }
 
-        public void updateColors(Color backgroundColor, Color backgroundButtonColor)
+        public void updateBackgroundTheme(Color backgroundColor)
         {
             view.BackgroundColor = backgroundColor;
+            label.TextColor = InvertedColor(backgroundColor);
+        }
+
+        public void updateButtonTheme(Color backgroundButtonColor)
+        {
             button.BackgroundColor = backgroundButtonColor;
+            button.TextColor = InvertedColor(backgroundButtonColor);
+        }
+
+        private static Color InvertedColor(Color color)
+        {
+            return Color.FromRgb(
+                1 - color.R,
+                1 - color.G,
+                1 - color.B);
         }
     }
 }

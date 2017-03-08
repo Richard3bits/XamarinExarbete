@@ -2,17 +2,29 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinExarbete.PreviewView">
   <ContentView.Content>
       
-        <StackLayout
-            x:Name="view">
+        <StackLayout Orientation="Vertical">
+            
             <Label
-                Text="Färg"
-                x:Name="label" />
-            <Button
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                Text="Färg"
-                x:Name="button" />
+                TextColor="Black"
+                Text="Färgtema" />
+
+            <StackLayout
+                VerticalOptions="FillAndExpand"
+                x:Name="view">
+
+                <Label
+                    Text="Bakgrundsfärg"
+                    x:Name="label" />
+                <Button
+                    VerticalOptions="Center"
+                    Text="Knapp-färg"
+                    x:Name="button" />
+            </StackLayout>
+
         </StackLayout>
       
     </ContentView.Content>
+    
 </ContentView>

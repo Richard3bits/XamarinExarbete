@@ -3,44 +3,63 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:custom="clr-namespace:XamarinExarbete"
              x:Class="XamarinExarbete.RegisterForm">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="resourceBackgroundColor">#FF00FF</Color>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    <StackLayout Orientation="Vertical">
 
-        <StackLayout Orientation="Horizontal">
+    <ScrollView>
+        <StackLayout Orientation="Vertical"
+                 Padding="20">
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Entry
+                        HorizontalOptions="FillAndExpand"
+                        x:Name="firstNameField"
+                        Placeholder="Förnamn" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Entry
+                        HorizontalOptions="FillAndExpand"
+                        x:Name="LastNameField"
+                        Placeholder="Efternamn" />
+                </StackLayout>
+            </StackLayout>
+
             <Entry
-                x:Name="firstNameField"
-                Placeholder="Förnamn" />
+                x:Name="emailField"
+                Placeholder="Email" />
+
             <Entry
-                x:Name="LastNameField"
-                Placeholder="Efternamn" />
-        </StackLayout>
+                IsPassword="True"
+                x:Name="passwordField"
+                Placeholder="Lösenord" />
 
-        <Entry
-            x:Name="emailField"
-            Placeholder="Email" />
-        
-        <Entry
-            IsPassword="True"
-            x:Name="passwordField"
-            Placeholder="Lösenord" />
+            <Entry
+                IsPassword="True"
+                x:Name="repeatPasswordField"
+                Placeholder="Repetera lösenord" />
 
-        <Entry
-            IsPassword="True"
-            x:Name="repeatPasswordField"
-            Placeholder="Repetera lösenord" />
+            <Switch
+                x:Name="colorSwitch" />
 
-        <StackLayout Orientation="Horizontal"
+            <StackLayout Orientation="Horizontal"
                      x:Name="colorStack">
-            <custom:ColorTemplateView
+                <custom:ColorTemplateView
                 slideEvent="OnSliderPageChanged"
                 x:Name="ColorView"
                 HorizontalOptions="FillAndExpand" />
+                
+            </StackLayout>
+
+            <Button
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="70"
+                BackgroundColor="#00FF00"
+                x:Name="registerButton"
+                FontSize="Large"
+                Margin="50, 0, 50, 0"
+                Text="Registrera" />
+
         </StackLayout>
 
-    </StackLayout>
-    
+    </ScrollView>
+
 </ContentPage>

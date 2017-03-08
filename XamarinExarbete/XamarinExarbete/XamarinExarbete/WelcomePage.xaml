@@ -6,33 +6,28 @@
     <StackLayout
         Orientation="Vertical"
         HorizontalOptions="FillAndExpand"
-        VerticalOptions="Center"
-        
-        Spacing="40">
+        VerticalOptions="Center">
 
         <Button
             x:Name="loginButton"
             HeightRequest="100"
             BackgroundColor="#119911"
             Text="Logga in"
-            FontSize="22"
-            Margin="30, 0, 30, 0" />
+            FontSize="22" />
 
         <Button
             x:Name="registerButton"
             HeightRequest="80"
             BackgroundColor="#669966"
             Text="Registrera"
-            FontSize="16"
-            Margin="60, 0, 60, 0" />
+            FontSize="16" />
 
         <Button
             x:Name="guestButton"
             HeightRequest="60"
             BackgroundColor="#66AA66"
             Text="Gäst-användare"
-            FontSize="12"
-            Margin="90, 0, 90, 0" />
+            FontSize="12" />
 
     </StackLayout>
 

@@ -10,9 +10,18 @@
             <Label
                 x:Name="colorLabel"
                 Text="Välj färgtema"
-                Margin="20, 0, 0, 0"
                 TextColor="Black" />
 
+            <Label
+                x:Name="hexColorLabel"
+                Text="Hex: #000000"
+                TextColor="Black" />
+
+            <Label
+                x:Name="rgbColorLabel"
+                Text="RGB(0, 0, 0)"
+                TextColor="Black" />
+            
             <!--<BoxView
                 HorizontalOptions="FillAndExpand"
                 HeightRequest="100"
@@ -21,47 +30,44 @@
 
             <StackLayout Orientation="Horizontal">
                 <Label
-                x:Name="redLabel"
-                Margin="20, 20, 20, 0"
-                TextColor="Red"
-                Text="Röd" />
+                    x:Name="redLabel"
+                    WidthRequest="40"
+                    TextColor="Red"
+                    Text="Röd" />
                 <Slider
-                HorizontalOptions="FillAndExpand"
-                ValueChanged="OnRedSliderChanged"
-                Margin="20, 20, 20, 0"
-                Minimum="0"
-                Maximum="1"
-                x:Name="redSlider" />
+                    HorizontalOptions="FillAndExpand"
+                    ValueChanged="OnSliderChanged"
+                    Minimum="0"
+                    Maximum="1"
+                    x:Name="redSlider" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
                 <Label
-                x:Name="greenLabel"
-                Margin="20, 20, 20, 0"
-                TextColor="Green"
-                Text="Grön" />
+                    x:Name="greenLabel"
+                    WidthRequest="40"
+                    TextColor="Green"
+                    Text="Grön" />
                 <Slider
-                HorizontalOptions="FillAndExpand"
-                ValueChanged="OnRedSliderChanged"
-                Margin="20, 20, 20, 0"
-                Minimum="0"
-                Maximum="1"
-                x:Name="greenSlider" />
+                    HorizontalOptions="FillAndExpand"
+                    ValueChanged="OnSliderChanged"
+                    Minimum="0"
+                    Maximum="1"
+                    x:Name="greenSlider" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
                 <Label
-                x:Name="blueLabel"
-                Margin="20, 20, 20, 0"
-                TextColor="Blue"
-                Text="Blå" />
+                    x:Name="blueLabel"
+                    WidthRequest="40"
+                    TextColor="Blue"
+                    Text="Blå" />
                 <Slider
-                HorizontalOptions="FillAndExpand"
-                ValueChanged="OnRedSliderChanged"
-                Minimum="0"
-                Maximum="1"
-                Margin="20, 20, 20, 0"
-                x:Name="blueSlider" />
+                    HorizontalOptions="FillAndExpand"
+                    ValueChanged="OnSliderChanged"
+                    Minimum="0"
+                    Maximum="1"
+                    x:Name="blueSlider" />
             </StackLayout>
 
         </StackLayout>

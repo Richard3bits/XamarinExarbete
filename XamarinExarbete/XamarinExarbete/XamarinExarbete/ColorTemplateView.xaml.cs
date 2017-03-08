@@ -8,7 +8,6 @@ using Xamarin.Forms;
 
 namespace XamarinExarbete
 {
-
     public delegate void slideDispatcher();
 
     public partial class ColorTemplateView : ContentView
@@ -22,7 +21,7 @@ namespace XamarinExarbete
             InitializeComponent();
         }
 
-        void OnRedSliderChanged(object sender, ValueChangedEventArgs e)
+        void OnSliderChanged(object sender, ValueChangedEventArgs e)
         {
             double red = redSlider.Value;
             double green = greenSlider.Value;
@@ -38,8 +37,9 @@ namespace XamarinExarbete
 
             Color = Color.FromRgb(red, green, blue);
             // box.BackgroundColor = Color;
-            colorLabel.Text = "Färgkod\nHex: #" + redToHexString + greenToHexString + blueToHexString + '\n'
-                + "RGB(" + redInt + ", " + greenInt + ", " + blueInt + ")";
+            colorLabel.Text = "Färgkod";
+            hexColorLabel.Text = "Hex: #" + redToHexString + greenToHexString + blueToHexString;
+            rgbColorLabel.Text = "RGB(" + redInt + ", " + greenInt + ", " + blueInt + ")";
 
             slideEvent.Invoke();
         }

@@ -32,10 +32,16 @@ namespace XamarinExarbete {
         private global::Xamarin.Forms.Entry repeatPasswordField;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Switch colorSwitch;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.StackLayout colorStack;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::XamarinExarbete.ColorTemplateView ColorView;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button registerButton;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
@@ -45,8 +51,10 @@ namespace XamarinExarbete {
             emailField = this.FindByName<global::Xamarin.Forms.Entry>("emailField");
             passwordField = this.FindByName<global::Xamarin.Forms.Entry>("passwordField");
             repeatPasswordField = this.FindByName<global::Xamarin.Forms.Entry>("repeatPasswordField");
+            colorSwitch = this.FindByName<global::Xamarin.Forms.Switch>("colorSwitch");
             colorStack = this.FindByName<global::Xamarin.Forms.StackLayout>("colorStack");
             ColorView = this.FindByName<global::XamarinExarbete.ColorTemplateView>("ColorView");
+            registerButton = this.FindByName<global::Xamarin.Forms.Button>("registerButton");
         }
     }
 }

@@ -20,6 +20,12 @@ namespace XamarinExarbete {
         private global::Xamarin.Forms.Label colorLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label hexColorLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label rgbColorLabel;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label redLabel;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -41,6 +47,8 @@ namespace XamarinExarbete {
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(ColorTemplateView));
             colorLabel = this.FindByName<global::Xamarin.Forms.Label>("colorLabel");
+            hexColorLabel = this.FindByName<global::Xamarin.Forms.Label>("hexColorLabel");
+            rgbColorLabel = this.FindByName<global::Xamarin.Forms.Label>("rgbColorLabel");
             redLabel = this.FindByName<global::Xamarin.Forms.Label>("redLabel");
             redSlider = this.FindByName<global::Xamarin.Forms.Slider>("redSlider");
             greenLabel = this.FindByName<global::Xamarin.Forms.Label>("greenLabel");

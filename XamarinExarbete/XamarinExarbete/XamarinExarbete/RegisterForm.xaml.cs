@@ -17,13 +17,20 @@ namespace XamarinExarbete
         public RegisterForm()
         {
             InitializeComponent();
-            previewView = new PreviewView(Color.White, Color.White);
+            previewView = new PreviewView();
             colorStack.Children.Add(previewView);
         }
 
         void OnSliderPageChanged()
         {
-            previewView.updateColors(ColorView.Color, ColorView.Color);
+            if (colorSwitch.IsToggled)
+            {
+                previewView.updateBackgroundTheme(ColorView.Color);
+            }
+            else
+            {
+                previewView.updateButtonTheme(ColorView.Color);
+            }
         }
     }
 }

@@ -13,10 +13,12 @@ namespace XamarinExarbete
         {
             InitializeComponent();
 
-            // MainPage = new WelcomePage();
-            // MainPage = new ColorTemplate();
-            MainPage = new RegisterForm();
-        }
+			// MainPage = new WelcomePage();
+			// MainPage = new ColorTemplate();
+			//MainPage = new RegisterForm();
+			MainPage = new ItemPage();
+
+		}
 
         protected override void OnStart()
         {
